@@ -1,0 +1,31 @@
+create an aplication which should be able to store 5 employee details   
+     eid,ename,salary,desg
+  
+create a method within a class  to print all  5 employee
+
+name of the method : printAllemployee()
+
+
+class Employee
+{
+
+  int eid;
+  String ename;
+  float salary;
+  String designation;
+
+}
+
+
+class Demo{
+  
+    public static void main(String a[]) {
+         
+         Employee el[] = new Employee[5];
+         
+         el[0].eid = 1;
+         el[0].ename = "rushikesh";
+                  
+           
+        }
+}

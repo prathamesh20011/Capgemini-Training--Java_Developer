@@ -1,0 +1,262 @@
+1) Java Language - Sun Micro System developed the Java language
+
+ -platform independent language.
+ 
+
+
+C/C+/PASCAL - not platform independent.
+
+
+Use Case: 
+
+Yash : needs a S/W [Economical,Maintenance Cost is low, Infrastructure]
+
+
+Jatin : C,C++,Pascal
+
+
+
+> How java is platform independent?
+      - because of Bytecode (source code gets convert to bytecode which can run on any machine) ,unlike other languages
+         which generate machine code.
+
+ The Byte Code is known to JVM( Java Virtual Machine) which will convert the byte code into machine/native code.
+
+
+> Components of Java
+    JVM - platform dependent written in C Language(specific to partcular OS)
+    JRE - Java Runtime Environment( JVM,JIT, ClassLoader): It provides libraries
+    JIT - Just in Time Compiler
+    Class Loader - all classes(predefined or userdefined) will be loaded for execution.
+
+
+
+
+2) Fundamentals of Java Programming
+
+        -datatypes  -> primitive DT- [int - more than 2 digit(25),float -10.67,double,short - bit values(10),byte -10098,char - 'J',boolean - true/false,long - 10 digit].
+
+
+        - operators ->  arithmetic, comparison & logical,bitwise.
+
+        - keywords -> 50+ reserved key words (case-sensitive) 
+
+        - control statements ->   a) control statements - if,if-else,if-else-if,switch.
+                                b) iterative statements - for,while,do-while.
+                                c) branching statements  - return,break,continue.
+
+
+  Reference/non primitive DT 
+    String is a class in Java
+
+
+
+3) Versions of  Java
+          - JAVA 8 -> FEATURES OF JAVA 8(Main)
+
+  -java 1.0: dictionary,awt
+  -java 1.2: collection framework,awt,JFC(Swing), StringBuffer,jdbc,Web development.
+  -java 1.3: wrapper classes,autobxing ,depreated api formation.
+  -java 1.4: autoboxing improvisation, string builder,string tokenizer.
+  -java 1.5: generics,collection framework was re-written with support of generics,for-each loop,Hot Spot VM.
+  - java 1.6: Annotations, Concurrent threading, concurrent collection API.
+  - java 7: ARM(Automatic resource management) Switch: which can be used with 'String'.
+   -JAVA 8 -> FEATURES OF JAVA 8
+          - Lamda expressions,functional programming,joda date time,stream API,method refrence,function interface, 
+            default methods &static methods in interfaces.
+
+
+  > JAVA CODE: 
+    
+    packages
+    class class_name
+    {
+           public static void main(String a[]) 
+           {
+
+
+           }
+    }
+
+
+// Single line comment
+/*
+
+
+*/ Mulitiline comment
+
+
+
+ex :-    
+   
+   public class Demo
+   {
+           public static void main(String a[])
+           {
+               System.out.println("welcome prathmaesh to java language");
+
+             
+           }
+    }
+
+
+data is stored in the form of array with specific indexes.
+
+
+1) Source Code - save with .java extension.
+2) compile the code : javac filename.java
+3) execute the code : java classname(which contains main method)
+
+
+
+Note:- 
+    - className and fileName can be same.
+
+    - className and FileName  can be different,only when the class is not declared as "public".
+
+    - ensure the className and fileName is always same which will ensure better code management and readibility.
+
+
+ 
+
+->  Understand about System.out.println ?
+                
+        System. - class
+        out.  - object
+        println() - it is a method
+
+All predefined classes are stored in packages.
+  
+System ->  a class which comes under java.lang
+         - the package is loaded by the jvm.
+
+
+javap java.lang.System - here out(Object) is present
+
+  out was declared inside System class.(e.g. System.out.println())
+
+
+LITERALS are the values assigned to a particular data type.
+
+
+TYPE CASTING
+   - Implicit casting
+   - Explicit casting
+
+Wrapper class
+
+
+ //every data type is asssociated with a class in Java.
+
+
+int -----------gets derived from -------->  Integer 
+float --------------->  Float
+double --------------------->  Double
+short  -------------------------> Short --------------->Number ----------->Object
+byte -------------------------> Byte
+long -------------------------->  Long
+char  ---------------------------> Character
+boolean ----------------------> Boolean
+
+
+  -all above things come under java.lang package.
+   (in cmd javap java.lang.Integer)
+
+
+
+NOTE:- 
+         java.lang.Object :  is a parent or  the top most class in java.
+     
+   
+
+  
+
+> How to create an object of a class in java?
+
+ class Student
+{
+  int a,b,c;    //members
+}
+
+
+Student studentObj;  //reference its is null  - in reference type there is no predefined size
+
+Student studentObj = new Student();  // Object creation is done
+
+
+new Student();
+   //create a copy of these class
+   //space is alocated in the memory for the Student class
+
+
+studentObj.a
+studentObj.b;
+studentObj.c;
+
+ NOTE:-    dot operator is used to access the members of the class.
+
+
+
+
+
+> Arrays(data type)store data in a sequential or contigenous memory format 
+       -to reduce the number of variables to store data
+       - it represents data in index format
+       - arrays have a fixed size(cannot grow or shrink dynamically)
+       - arrays are homogenous in nature.
+
+   PS: need to store 10 students data[rollno,totalmarks,grade,percentage]
+
+ class DemoApp
+{
+
+  public static void main(String a[])
+ {
+
+    Student st[] = new Student[2];
+    st.name ="Prathamesh";
+    st.rollno = 101;
+    st.marks = 90;
+
+    int rollno1,rollno2,-----
+    
+    int rollno[] = new int[10]; //fixed size   // []-(subscript)
+    rollno[0] = 19;
+    rollno[1] = 100;
+
+   System.out.println(rollno[1]);
+
+   int totalmarks[] = {990,665,66,77};    // int[] totalmarks -recommend to use subscript before variable.
+   
+   System.out.println(totalmarks.length);  
+ }
+}
+
+
+
+class Student
+{
+   String name;
+   int rollno;
+   int marks;
+
+}
+
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
